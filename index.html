@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagenes/favicon.png" type="image/png">
     <title>ColorAleatorio</title>
 </head>
-<body class="centrar-flex">
-    <div id="contenedor" class="centrar-flex">
-        <p id="color">#2B807B</p>
-        <button id="boton">Cambiar Color</button>
-    </div>
-
-    <script src="js/app.js"></script>
+<body class="contenerdor">
+    <main>
+        <header>
+            <h1>Color Aleatorio</h1>
+            <p>Genera colores aleatorios</p>
+        </header>
+        <section id="color-section" class="color-section">
+            <div id="contendor-color" class="contendor-color">
+                <p id="hex-color" class="pill">HEX: #FF8040</p>
+            </div>
+            <button id="boton" class="boton-primario">Cambiar Color</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Copyright © 2026 diseño por <a href="#">Ronald Santana</a> y Desarrollo por <a href="#">Jedelorbeminaya</a></p>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>

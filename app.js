@@ -1,5 +1,6 @@
-const boton = document.querySelector("button");
-const color = document.getElementById("color");
+const boton = document.getElementById("boton");
+const color = document.getElementById("contendor-color");
+const hexColor = document.getElementById("hex-color");
 
 const generarColorHexAleatorio = ()=>{
     let digitos = "0123456789ABCFEF";
@@ -13,6 +14,6 @@ const generarColorHexAleatorio = ()=>{
 
 boton.addEventListener('click',()=>{
     let colorAleatorio = generarColorHexAleatorio();
-    color.textContent = colorAleatorio;
-    document.body.style.backgroundColor = colorAleatorio;
+    color.style.backgroundColor = colorAleatorio;
+    hexColor.textContent = "HEX: " + colorAleatorio;
 });

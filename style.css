@@ -1,47 +1,87 @@
+:root{
+    --color-primario: #293543;
+    --color-secundario: #787575;
+}
 *{
     margin: 0;
     padding: 0;
-    font-family: verdana, sans-serif;
+    font-family: system-ui, sans-serif;
+    box-sizing: border-box;
 }
 
 body{
+    width: 100vw;
     height: 100vh;
-    background-color: #2B807B;
-    text-align: center;
 }
-
-.centrar-flex{
+.contenerdor{
+    max-width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 32px 32px;
     display: flex;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+    margin-bottom: 32px;
+}
+h1{
+    font-size: 36px;
+    color: var(--color-primario);
+}
+p{
+    font-size: 20px;
+    color: var(--color-secundario);
+}
+.color-section{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-#contenedor{ 
-    height: 220px;
-    width: 450px;
-    background-color: #fff;
-    border: 5px solid #000;
-    flex-wrap: wrap;
+.contendor-color{
+    width: 100%;
+    max-width: 674px;
+    height: 444px;
+    border-radius: 32px;
+    background-color: #1D47D1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    row-gap: 16px;
+    padding: 32px;
+    margin-bottom: 32px;
 }
-
-#color{
-    font-size: 70px;
-    font-weight: bold;
-}
-
-button{
-    font-size:30px;
+.pill{
+    font-size: 12px;
     color: #fff;
-    border-radius: 20px;
-    background-color: #008cba;
-    margin: 15px;
-    padding: 10px 30px;
-    border: 3px solid #008cba;
+    border: 1.5px dashed #fff;
+    padding: 8px 16px;
+    border-radius: 32px;
+    user-select: none;
+}
+.boton-primario{
+    font-size: 16px;
+    color: #fff;
+    border-radius: 32px;
+    background-color: var(--color-primario);
+    padding: 8px 32px;
+    border: 3px solid var(--color-primario);
     user-select: none;
     transition-duration: 0.4s;
     cursor: pointer;
 }
-
-button:hover{
-    background-color: #05455a;
+.footer{
+    padding-top: 64px;
+    text-align: center;
+    p {
+        font-size: 14px;
+        color: var(--color-secundario);
+    }
+    a{
+        color: var(--color-primario);
+        text-decoration: none;
+        font-weight: 600;
+    }
 }
